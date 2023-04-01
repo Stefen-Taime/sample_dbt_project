@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: utilisateurs
+    description: "Informations sur les utilisateurs de la plateforme de streaming musical"
+    columns:
+      - name: id_utilisateur
+        description: "Identifiant unique de l'utilisateur"
+        tests:
+          - unique
+          - not_null
+
+  - name: chansons
+    description: "Détails des chansons écoutées par les utilisateurs"
+    columns:
+      - name: id_utilisateur
+        description: "Identifiant de l'utilisateur qui a écouté la chanson"
+        tests:
+          - not_null

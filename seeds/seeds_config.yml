@@ -1,0 +1,30 @@
+version: 2
+
+seeds:
+  - name: utilisateurs
+    columns:
+      - name: id_utilisateur
+        data_type: integer
+      - name: nom
+        data_type: varchar(255)
+      - name: age
+        data_type: integer
+      - name: pays
+        data_type: varchar(255)
+
+  - name: chansons
+    columns:
+      - name: id_utilisateur
+        data_type: integer
+      - name: titre
+        data_type: varchar(255)
+      - name: artiste
+        data_type: varchar(255)
+      - name: duree_sec
+        data_type: integer
+      - name: genre
+        data_type: varchar(255)
+      - name: date_ecoute
+        data_type: date
+      - name: nombre_ecoutes
+        data_type: integer
